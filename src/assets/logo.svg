@@ -1,0 +1,11 @@
+<svg width="111" height="72" viewBox="0 0 111 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear_994_94" x1="0" y1="0" x2="77.8461" y2="9.73773" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#406AFF"/>
+      <stop offset="1" stop-color="#FF56F6"/>
+    </linearGradient>
+  
+  </defs>
+  <text x="10" y="40" fill="url(#paint0_linear_994_94)" font-family="'Great Vibes', Poppins" font-size="35px">RISHI</text>
+  <text x="10" y="70" fill="white" font-family="Great Vibes, Poppins" font-size="20px"></text>
+</svg>
