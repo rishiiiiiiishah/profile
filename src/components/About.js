@@ -41,7 +41,7 @@ const About = () => {
              whileInView={'show'} 
              viewport={{once: false, amount:0.7}} 
             
-            className='h3 mb-4 sm:font-normal'>
+            className='text-lg h3 mb-4 sm:font-sm'>
 
              Full Stack Web Developer
             </motion.h3>
@@ -53,7 +53,7 @@ const About = () => {
              whileInView={'show'} 
              viewport={{once: false, amount:0.7}} 
             
-            className='mb-7'>With a solid foundation in programming languages such as HTML, CSS, JavaScript, and familiarity with frameworks like React and Node.js, I'm actively honing my skills to create seamless and user-friendly web experiences. </motion.p>
+            className='mb-11'>With a solid foundation in programming languages such as HTML, CSS, JavaScript, and familiarity with frameworks like React and Node.js, I'm actively honing my skills to create seamless and user-friendly web experiences. </motion.p>
             <motion.div
             variants= {fadeIn('left',0.3)}
             initial='hidden'

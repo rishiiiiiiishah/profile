@@ -13,7 +13,23 @@ import Experience from './components/Experience';
 const App = () => {
   return (
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
-      <Header />
+      {/* <Header /> */}
+      <div className='hidden md:block'>
+    .
+    <div>
+        .
+    </div>
+    <div>
+        .
+    </div>
+</div>
+
+<div className='lg:hidden'>
+  .
+</div>
+
+
+
       <Banner />
       <Nav />
       <About />

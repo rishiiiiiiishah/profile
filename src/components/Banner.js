@@ -33,7 +33,7 @@ const Banner = () => {
              initial='hidden'
               whileInView={'show'} 
               viewport={{once: false, amount:0.7}}  className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-2xl text-white mr-2'>I am a</span>
+              <span className='text-lg text-white mr-2'>I am a</span>
               <TypeAnimation
                 sequence={[
                   'Front-End Developer',
@@ -89,7 +89,7 @@ const Banner = () => {
            viewport={{once: false, amount:0.7}} 
           
           className="flex justify-center lg:justify-end">
-            <img className="w-[300px] lg:w-[400px]" src={Image} alt="" />
+            <img className="w-[250px] lg:w-[400px]" src={Image} alt="" />
           </motion.div>
 
         </div>

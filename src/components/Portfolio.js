@@ -42,7 +42,7 @@ const Portfolio = () => {
             id: 5,
             src: nova,
             codeLink: 'https://rishiiiiiiishah.github.io/novaa/',
-            demoLink: 'https://github.com/rishiiiiiiishah/novaa',
+            demoLink: 'https://novaa-six.vercel.app/',
             projectName: "Nova Project"
         },
     ];
