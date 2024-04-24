@@ -65,7 +65,7 @@ const About = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex space-x-4'
             >
-              <div className='text-[40px] font-tertiary text-gradient mb-5'>
+              <div className='text-[30px] font-tertiary text-gradient mb-5'>
                 {inView ? <CountUp start={0} end={24} duration={7} /> : 0}
                 +
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -73,7 +73,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className='text-[40px] font-tertiary text-gradient mb-2'>
+              <div className='text-[30px] font-tertiary text-gradient mb-2'>
                 {inView ? <CountUp start={0} end={8} duration={7} /> : 0}
                 +
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -81,7 +81,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className='text-[40px] font-tertiary text-gradient mb-2'>
+              <div className='text-[30px] font-tertiary text-gradient mb-2'>
                 {inView ? <CountUp start={0} end={1} duration={10} /> : 0}
                 <div className='font-primary text-sm tracking-[2px]'>
                   Number of <br /> Internships
