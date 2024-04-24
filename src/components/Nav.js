@@ -1,8 +1,10 @@
 import React from 'react';
 import {BiHomeAlt,BiUser} from 'react-icons/bi';
-import {BsClipboardData,BsBriefcase,  BsChatSquareText, BsFillClipboardCheckFill } from 'react-icons/bs'
-
+import {BsClipboardData,BsBriefcase,  BsChatSquareText, BsFillClipboardCheckFill  } from 'react-icons/bs'
+import { MdCastForEducation } from "react-icons/md";
 import {Link} from 'react-scroll'
+import { IoIosContact } from "react-icons/io";
+
 
 const Nav = () => {
 
@@ -60,8 +62,21 @@ const Nav = () => {
     
     
     className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
-    <BsChatSquareText />
+   <IoIosContact />
+
     </Link>
+{/* 
+    <Link to='education' 
+    activeClass='active'
+    smooth={true}
+    spy={true}
+    offset={-200}
+    className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+   <MdCastForEducation />
+
+    </Link> */}
+
+    
    
    </div>
     </div>

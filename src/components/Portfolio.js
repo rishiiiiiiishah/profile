@@ -5,6 +5,7 @@ import mytunes from '../assets/mytunes.png';
 import moon from '../assets/moon.png';
 import nova from '../assets/nova.png';
 import './Portfolio.css'; // Import CSS file for styling
+import tailwind from '../assets/tailwind.png'
 import { motion } from 'framer-motion'
 
 import { fadeIn } from '../variants'

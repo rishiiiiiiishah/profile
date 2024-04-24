@@ -7,6 +7,7 @@ import github from '../assets/github.png';
 import node from '../assets/node.jpg';
 import mongo from '../assets/mongo.png';
 import express from '../assets/express.jpg';
+import tailwind from '../assets/tailwind.png'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 
@@ -20,8 +21,8 @@ const Experience = () => {
         },
         {
             id: 2,
-            src: css,
-            title: 'CSS'
+            src: tailwind,
+            title: ' TAILWIND CSS'
         },
         {
             id: 3,

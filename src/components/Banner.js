@@ -1,19 +1,17 @@
 import React from 'react';
-import Image from '../assets/rishi.png'
-
+import Image from '../assets/rishi.png';
 import { FaGithub, FaEnvelope, FaFileAlt } from 'react-icons/fa';
-import { TypeAnimation } from 'react-type-animation'
-import { motion } from 'framer-motion'
-
-import { fadeIn } from '../variants'
+import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
+import { FaLinkedin } from "react-icons/fa";
 
 const Banner = () => {
-
   const handleResumeDownload = () => {
     // Replace 'your-resume-url' with the actual URL of your resume file
     window.location.href = 'https://drive.google.com/file/d/1DfdfIJ4pLJ4wq4QTFC4cicjjM5O7tz8M/view?usp=drivesdk';
   };
-
 
   return (
     <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
@@ -29,17 +27,18 @@ const Banner = () => {
               className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
               RISHI <span>SHAH</span>
             </motion.h1>
-            <motion.div variants={fadeIn('up',0.3)}
+            <motion.div variants={fadeIn('up', 0.3)}
              initial='hidden'
-              whileInView={'show'} 
-              viewport={{once: false, amount:0.7}}  className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-lg text-white mr-2'>I am a</span>
+             whileInView={'show'} 
+             viewport={{once: false, amount: 0.7}}  
+             className='mb-6 text-2xl lg:text-[52px] font-secondary font-semibold uppercase leading-[1]'>
+              <span className='text-lg lg:text-xl text-white mr-2'>I am a</span>
               <TypeAnimation
                 sequence={[
-                  'Front-End Developer',
+                  'Frontend Developer',
                   2000,
-                  'Back-End Developer',
-                                    2000,
+                  'Backend Developer',
+                  2000,
                   'UI/UX Designer',
                   2000,
                 ]}
@@ -49,6 +48,7 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </motion.div>
+
             <motion.p 
             variants={fadeIn('up',0.5)}
             initial='hidden'
@@ -61,8 +61,11 @@ const Banner = () => {
              whileInView={'show'} 
              viewport={{once: false, amount:0.7}} 
             className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>Contact Me</button>
-              <a href="#" className='text-gradient btn-link'>My Portfolio</a>
+              {/* Link to the contact section */}
+              <Link to='contact'  smooth={true} duration={500} className='btn btn-lg flex items-center cursor-pointer'>Contact Me</Link>
+
+              {/* Direct download link for the resume */}
+              <a href="#" className='text-gradient btn-link' onClick={handleResumeDownload}>My Resume</a>
             </motion.div>
             <motion.div
             variants={fadeIn('up',0.7)}
@@ -78,6 +81,12 @@ const Banner = () => {
               </a>
               <a href="https://drive.google.com/file/d/1DfdfIJ4pLJ4wq4QTFC4cicjjM5O7tz8M/view?usp=drivesdk" onClick={handleResumeDownload}>
                 <FaFileAlt />
+              </a>
+
+
+              <a href="https://drive.google.com/file/d/1DfdfIJ4pLJ4wq4QTFC4cicjjM5O7tz8M/view?usp=drivesdk" onClick={handleResumeDownload}>
+              <FaLinkedin />
+
               </a>
             </motion.div>
           </div>
